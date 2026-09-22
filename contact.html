@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - VERITAS CONSULTING</title>
-
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
-    <link rel="icon" type="image/png" href="logo.png" />
+<link rel="icon" type="image/png" href="logo.png">
     <style>
         /* ============================================================
            RESET & VARIABLES
@@ -41,9 +41,7 @@
             --max-text: 900px;
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
+        html { scroll-behavior: smooth; }
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -67,9 +65,7 @@
             letter-spacing: -0.02em;
         }
 
-        .section-title .highlight {
-            color: var(--gold);
-        }
+        .section-title .highlight { color: var(--gold); }
 
         .section-title-wrapper {
             margin-bottom: 40px;
@@ -93,12 +89,8 @@
             text-align: center;
         }
 
-        .section {
-            padding: 80px 0;
-        }
-        .alt-bg {
-            background: var(--bg-secondary);
-        }
+        .section { padding: 80px 0; }
+        .alt-bg { background: var(--bg-secondary); }
 
         /* ---------- Buttons ---------- */
         .btn-primary {
@@ -210,7 +202,7 @@
             position: absolute;
             inset: 4px;
             border-radius: 8px;
-            background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.15), transparent 70%);
+            background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.15), transparent 70%);
             pointer-events: none;
         }
 
@@ -236,7 +228,7 @@
         .logo-square-consulting {
             font-size: 5.5px;
             font-weight: 600;
-            color: rgba(255, 255, 255, 0.85);
+            color: rgba(255,255,255,0.85);
             letter-spacing: 1.5px;
             text-transform: uppercase;
             margin-top: 1px;
@@ -272,19 +264,18 @@
         }
 
         .main-nav ul li a {
-            color: rgba(255, 255, 255, 0.55);
+            color: rgba(255,255,255,0.55);
             text-decoration: none;
             font-weight: 500;
             font-size: 0.85rem;
             padding: 8px 16px;
             border-radius: 8px;
             transition: var(--transition);
-            position: relative;
         }
 
         .main-nav ul li a:hover {
             color: var(--text-white);
-            background: rgba(255, 255, 255, 0.06);
+            background: rgba(255,255,255,0.06);
         }
 
         .main-nav ul li a.active {
@@ -321,12 +312,8 @@
             transition: var(--transition);
         }
 
-        .hamburger:hover {
-            color: var(--gold);
-        }
-        main {
-            padding-top: 76px;
-        }
+        .hamburger:hover { color: var(--gold); }
+        main { padding-top: 76px; }
 
         /* ============================================================
            CONTACT HERO
@@ -382,9 +369,7 @@
             margin-bottom: 12px;
         }
 
-        .contact-hero h1 .highlight {
-            color: var(--gold);
-        }
+        .contact-hero h1 .highlight { color: var(--gold); }
 
         .contact-hero .hero-divider {
             width: 60px;
@@ -520,6 +505,33 @@
         }
 
         /* ============================================================
+           FORM DISCLAIMER (NEW)
+           ============================================================ */
+        .form-disclaimer {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-top: 16px;
+            padding: 16px 18px;
+            background: var(--bg-secondary);
+            border-radius: var(--radius);
+            border-left: 3px solid var(--gold);
+            text-align: left;
+        }
+
+        .form-disclaimer a {
+            color: var(--gold-dark);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .form-disclaimer a:hover {
+            color: var(--gold);
+            text-decoration: underline;
+        }
+
+        /* ============================================================
            CONTACT INFO SIDEBAR
            ============================================================ */
         .contact-info-wrapper {
@@ -589,25 +601,33 @@
             margin-top: 4px;
         }
 
-        /* Map container */
-        .map-container {
-            width: 100%;
+        /* Map Placeholder */
+        .map-placeholder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            background: var(--bg-secondary);
             border-radius: var(--radius);
-            overflow: hidden;
-            border: 2px solid var(--border-color);
+            color: var(--text-secondary);
+            border: 2px dashed var(--border-color);
+            min-height: 180px;
             transition: var(--transition);
-            margin-top: 4px;
         }
 
-        .map-container:hover {
+        .map-placeholder:hover {
             border-color: var(--gold);
         }
 
-        .map-container iframe {
-            display: block;
-            width: 100%;
-            height: 200px;
-            border: 0;
+        .map-placeholder i {
+            font-size: 3rem;
+            color: var(--gold);
+            margin-bottom: 12px;
+        }
+
+        .map-placeholder p {
+            font-size: 0.9rem;
         }
 
         /* ============================================================
@@ -678,7 +698,7 @@
            ============================================================ */
         .footer {
             background: var(--primary);
-            color: rgba(255, 255, 255, 0.5);
+            color: rgba(255,255,255,0.5);
             padding: 50px 0 28px;
             border-top: 2px solid var(--gold);
         }
@@ -699,7 +719,7 @@
 
         .footer-brand .tagline {
             font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.35);
+            color: rgba(255,255,255,0.35);
             margin-bottom: 16px;
         }
 
@@ -711,15 +731,15 @@
         .social-links a {
             width: 38px;
             height: 38px;
-            background: rgba(255, 255, 255, 0.04);
+            background: rgba(255,255,255,0.04);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: rgba(255, 255, 255, 0.4);
+            color: rgba(255,255,255,0.4);
             text-decoration: none;
             transition: var(--transition);
-            border: 1px solid rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255,255,255,0.04);
         }
 
         .social-links a:hover {
@@ -749,7 +769,7 @@
         }
 
         .footer ul li a {
-            color: rgba(255, 255, 255, 0.4);
+            color: rgba(255,255,255,0.4);
             text-decoration: none;
             font-size: 0.85rem;
             transition: var(--transition);
@@ -763,7 +783,7 @@
 
         .footer-bottom {
             padding-top: 24px;
-            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            border-top: 1px solid rgba(255,255,255,0.06);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -773,7 +793,7 @@
 
         .copyright {
             font-size: 0.75rem;
-            color: rgba(255, 255, 255, 0.25);
+            color: rgba(255,255,255,0.25);
         }
 
         .pillar {
@@ -797,7 +817,7 @@
             .hamburger {
                 display: block;
             }
-
+            
             .main-nav {
                 display: none;
                 position: absolute;
@@ -806,32 +826,20 @@
                 right: 0;
                 background: var(--nav-bg);
                 padding: 16px 20px;
-                border-top: 1px solid rgba(255, 255, 255, 0.05);
+                border-top: 1px solid rgba(255,255,255,0.05);
                 box-shadow: var(--shadow-lg);
             }
-
-            .main-nav.open {
-                display: block;
-            }
-            .main-nav ul {
-                flex-direction: column;
-                gap: 2px;
-                align-items: stretch;
-            }
-            .main-nav ul li a {
-                display: block;
-                padding: 10px 14px;
-                text-align: center;
-            }
+            
+            .main-nav.open { display: block; }
+            .main-nav ul { flex-direction: column; gap: 2px; align-items: stretch; }
+            .main-nav ul li a { display: block; padding: 10px 14px; text-align: center; }
 
             .contact-grid {
                 grid-template-columns: 1fr;
                 gap: 30px;
             }
 
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-            }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
         }
 
         @media (max-width: 768px) {
@@ -863,19 +871,11 @@
                 font-size: 0.55rem;
             }
 
-            .section {
-                padding: 50px 0;
-            }
+            .section { padding: 50px 0; }
 
-            .contact-hero {
-                padding: 50px 0 30px;
-            }
-            .contact-hero h1 {
-                font-size: 2.4rem;
-            }
-            .contact-hero p {
-                font-size: 1rem;
-            }
+            .contact-hero { padding: 50px 0 30px; }
+            .contact-hero h1 { font-size: 2.4rem; }
+            .contact-hero p { font-size: 1rem; }
 
             .contact-form-wrapper {
                 padding: 24px 20px;
@@ -891,22 +891,17 @@
                 justify-content: center;
             }
 
-            .footer-grid {
-                grid-template-columns: 1fr;
-                gap: 28px;
-            }
-            .footer-bottom {
-                flex-direction: column;
-                text-align: center;
-            }
+            .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+            .footer-bottom { flex-direction: column; text-align: center; }
 
             .cta-bar-content {
                 flex-direction: column;
                 text-align: center;
             }
 
-            .map-container iframe {
-                height: 160px;
+            .form-disclaimer {
+                font-size: 0.75rem;
+                padding: 14px 16px;
             }
         }
 
@@ -944,12 +939,8 @@
                 display: none;
             }
 
-            .contact-hero h1 {
-                font-size: 2rem;
-            }
-            .container {
-                padding: 0 16px;
-            }
+            .contact-hero h1 { font-size: 2rem; }
+            .container { padding: 0 16px; }
 
             .contact-form-wrapper {
                 padding: 20px 16px;
@@ -966,8 +957,9 @@
                 padding: 10px 14px;
             }
 
-            .map-container iframe {
-                height: 140px;
+            .form-disclaimer {
+                font-size: 0.7rem;
+                padding: 12px 14px;
             }
         }
 
@@ -985,188 +977,193 @@
             transform: translateY(0);
         }
 
-        .delay-1 {
-            transition-delay: 0.1s;
-        }
-        .delay-2 {
-            transition-delay: 0.2s;
-        }
-        .delay-3 {
-            transition-delay: 0.3s;
-        }
-        .delay-4 {
-            transition-delay: 0.4s;
-        }
+        .delay-1 { transition-delay: 0.1s; }
+        .delay-2 { transition-delay: 0.2s; }
+        .delay-3 { transition-delay: 0.3s; }
+        .delay-4 { transition-delay: 0.4s; }
     </style>
 </head>
 <body>
 
-    <!-- ============================================================
-    HEADER
-    ============================================================ -->
-    <header class="header" id="header">
-        <div class="container header-container">
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="header" id="header">
+    <div class="container header-container">
 
-            <!-- ===== LOGO ===== -->
-            <a href="index.html" class="logo-area">
-                <img src="logo.png" alt="VERITAS CONSULTING" class="logo-image" />
-                <div class="logo-text">
-                    <span class="logo-veritas">VERITAS CONSULTING</span>
-                </div>
+        <!-- ===== LOGO ===== -->
+        <a href="index.html" class="logo-area">
+            <!-- OPTION 1: Use Image Logo (Recommended) -->
+            <img src="logo.png" alt="VERITAS CONSULTING" class="logo-image" /> 
+            
+            <!-- Logo Text beside the square -->
+            <div class="logo-text">
+                <span class="logo-veritas">VERITAS</span>
+                <span class="logo-consulting">CONSULTING</span>
+            </div>
+        </a>
+
+        <!-- ===== NAVIGATION ===== -->
+        <nav class="main-nav" id="mainNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="industries.html">Industries</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- ===== HEADER CTA ===== -->
+        <div class="header-cta">
+            <a href="contact.html" class="btn-primary btn-cta">
+                <i class="fas fa-handshake"></i> Request a Consultation
             </a>
-
-            <!-- ===== NAVIGATION ===== -->
-            <nav class="main-nav" id="mainNav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="industries.html">Industries</a></li>
-                    <li><a href="insights.html">Insights</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                </ul>
-            </nav>
-
-            <!-- ===== HEADER CTA ===== -->
-            <div class="header-cta">
-                <a href="contact.html" class="btn-primary btn-cta">
-                    <i class="fas fa-handshake"></i> Start a conversation
-                </a>
-                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
-    </header>
+    </div>
+</header>
 
-    <!-- ============================================================
-    MAIN CONTENT
-    ============================================================ -->
-    <main>
+<!-- ============================================================
+     MAIN CONTENT
+     ============================================================ -->
+<main>
 
-        <!-- ===== CONTACT HERO ===== -->
-        <section class="contact-hero">
-            <div class="container contact-hero-content">
-                <h1>Let's <span class="highlight">Connect</span></h1>
-                <div class="hero-divider"></div>
-                <p>Have a question or want to discuss your governance, risk, or compliance needs? Reach out to us and we'll get back to you promptly.</p>
+    <!-- ===== CONTACT HERO ===== -->
+    <section class="contact-hero">
+        <div class="container contact-hero-content">
+            <div class="contact-hero-badge">
+                <i class="fas fa-envelope"></i> Get In Touch
             </div>
-        </section>
+            <h1>Let's <span class="highlight">Connect</span></h1>
+            <div class="hero-divider"></div>
+            <p>Have a question or want to discuss your governance, risk, or compliance needs? Reach out to us and we'll get back to you promptly.</p>
+        </div>
+    </section>
 
-        <!-- ===== CONTACT FORM & INFO ===== -->
-        <section class="section">
-            <div class="container contact-grid">
-
-                <!-- ===== CONTACT FORM ===== -->
-                <div class="contact-form-wrapper animate-on-scroll">
-                    <div class="section-title-wrapper">
-                        <h2 class="section-title">Start a Conversation <span class="highlight"></span></h2>
-                    </div>
-
-                    <form id="contactForm" class="contact-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Full Name <span class="required">*</span></label>
-                                <input type="text" id="name" name="name" placeholder="Your full name" required />
-                            </div>
-                            <div class="form-group">
-                                <label for="organisation">Organisation <span class="required">*</span></label>
-                                <input type="text" id="organisation" name="organisation" placeholder="Your organisation" required />
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email">Email Address <span class="required">*</span></label>
-                                <input type="email" id="email" name="email" placeholder="you@example.com" required />
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" placeholder="+91 12345 67890" />
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="areaOfInterest">Area of Interest <span class="required">*</span></label>
-                            <select id="areaOfInterest" name="areaOfInterest" required>
-                                <option value="">Select an area of interest</option>
-                                <option value="ISO / Management Systems">ISO / Management Systems</option>
-                                <option value="GRC Advisory">GRC Advisory</option>
-                                <option value="Cybersecurity">Cybersecurity</option>
-                                <option value="SOC Readiness">SOC Readiness</option>
-                                <option value="Privacy / GDPR / HIPAA">Privacy / GDPR / HIPAA</option>
-                                <option value="Risk Management">Risk Management</option>
-                                <option value="Audit Readiness">Audit Readiness</option>
-                                <option value="AI Governance / ISO 42001">AI Governance / ISO 42001</option>
-                                <option value="Project Management">Project Management</option>
-                                <option value="PMO / Transformation">PMO / Transformation</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Message / Requirement <span class="required">*</span></label>
-                            <textarea id="message" name="message" placeholder="Tell us about your requirements..." required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn-primary">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
-
-                        <div id="successMessage" class="success-message">
-                            <i class="fas fa-check-circle"></i>
-                            Thank you! Your message has been sent successfully. We'll get back to you shortly.
-                        </div>
-                    </form>
+    <!-- ===== CONTACT FORM & INFO ===== -->
+    <section class="section">
+        <div class="container contact-grid">
+            
+            <!-- ===== CONTACT FORM ===== -->
+            <div class="contact-form-wrapper animate-on-scroll">
+                <div class="section-title-wrapper">
+                    <h2 class="section-title">Send Us a <span class="highlight">Message</span></h2>
                 </div>
 
-                <!-- ===== CONTACT INFO SIDEBAR ===== -->
-                <div class="contact-info-wrapper">
-
-                    <!-- Address -->
-                    <div class="contact-info-box animate-on-scroll delay-1">
-                        <div class="info-icon"><i class="fas fa-building"></i></div>
-                        <h3>Registered Address</h3>
-                        <p>
-                            <strong>SRESHTA Foundation,</strong><br />
-                            83/2A, Sir Shanmugam Road,<br />
-                            R.S. Puram,<br />
-                            Coimbatore – 641002, Tamil Nadu, India.
-                        </p>
-                    </div>
-
-                    <!-- Branch Address -->
-                    <div class="contact-info-box animate-on-scroll delay-2">
-                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <h3>Branch Address</h3>
-                        <p>
-                            E-210, ASHISH JK APARTMENTS,<br />
-                            Thubarahalli Extension Road,<br />
-                            Thubarahalli, Bengaluru – 560066,<br />
-                            Karnataka, India.
-                        </p>
-                    </div>
-
-                    <!-- Quick Contact -->
-                    <div class="contact-info-box animate-on-scroll delay-3">
-                        <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
-                        <h3>Quick Contact</h3>
-                        <div class="info-item">
-                            <i class="fas fa-phone-alt"></i>
-                            <span>+91 8056026281</span>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" required />
                         </div>
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>infovc@veritasconsul.com</span>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-clock"></i>
-                            <span>Mon – Fri, 9:00 AM – 6:00 PM IST</span>
+                        <div class="form-group">
+                            <label for="organisation">Organisation <span class="required">*</span></label>
+                            <input type="text" id="organisation" name="organisation" placeholder="Your organisation" required />
                         </div>
                     </div>
 
-                    <!-- Google Maps -->
-                    <div class="contact-info-box animate-on-scroll delay-4">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 12345 67890" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="areaOfInterest">Area of Interest <span class="required">*</span></label>
+                        <select id="areaOfInterest" name="areaOfInterest" required>
+                            <option value="">Select an area of interest</option>
+                            <option value="ISO / Management Systems">ISO / Management Systems</option>
+                            <option value="GRC Advisory">GRC Advisory</option>
+                            <option value="Cybersecurity">Cybersecurity</option>
+                            <option value="SOC Readiness">SOC Readiness</option>
+                            <option value="Privacy / GDPR / HIPAA">Privacy / GDPR / HIPAA</option>
+                            <option value="Risk Management">Risk Management</option>
+                            <option value="Audit Readiness">Audit Readiness</option>
+                            <option value="AI Governance / ISO 42001">AI Governance / ISO 42001</option>
+                            <option value="V-CISO Advisory">V-CISO Advisory</option>
+                            <option value="Project Management">Project Management</option>
+                            <option value="PMO / Transformation">PMO / Transformation</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message / Requirement <span class="required">*</span></label>
+                        <textarea id="message" name="message" placeholder="Tell us about your requirements..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+
+                    <!-- ===== NEW: FORM DISCLAIMER ===== -->
+                    <p class="form-disclaimer">
+                        By submitting this form, you acknowledge that the information provided will be used by Veritas Consulting to respond to your enquiry and for related professional communication, in accordance with our <a href="privacy.html">Privacy Policy</a>. Please avoid including sensitive personal information unless it is necessary to describe your enquiry.
+                    </p>
+
+                    <div id="successMessage" class="success-message">
+                        <i class="fas fa-check-circle"></i> 
+                        Thank you! Your message has been sent successfully. We'll get back to you shortly.
+                    </div>
+                </form>
+            </div>
+
+            <!-- ===== CONTACT INFO SIDEBAR ===== -->
+            <div class="contact-info-wrapper">
+                
+                <!-- Address -->
+                <div class="contact-info-box animate-on-scroll delay-1">
+                    <div class="info-icon"><i class="fas fa-building"></i></div>
+                    <h3>Registered Address</h3>
+                    <p>
+                        <strong>SRESHTA Foundation,</strong><br />
+                        83/2A, Sir Shanmugam Road,<br />
+                        R.S. Puram,<br />
+                        Coimbatore – 641002, Tamil Nadu, India.
+                    </p>
+                </div>
+
+                <!-- Branch Address -->
+                <div class="contact-info-box animate-on-scroll delay-2">
+                    <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Branch Address</h3>
+                    <p>
+                        E-210, ASHISH JK APARTMENTS,<br />
+                        Thubarahalli Extension Road,<br />
+                        Thubarahalli, Bengaluru – 560066,<br />
+                        Karnataka, India.
+                    </p>
+                </div>
+
+                <!-- Quick Contact -->
+                <div class="contact-info-box animate-on-scroll delay-3">
+                    <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                    <h3>Quick Contact</h3>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 8056026281</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>infovc@veritasconsul.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon – Fri, 9:00 AM – 6:00 PM IST</span>
+                    </div>
+                </div>
+
+                <!-- Google Maps -->
+                       <div class="contact-info-box animate-on-scroll delay-4">
                         <div class="info-icon"><i class="fas fa-map"></i></div>
                         <h3>Google Maps</h3>
                         <div class="map-container">
@@ -1181,26 +1178,26 @@
                 <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 6px;">📍 83/2A, Sir Shanmugam Road, R.S. Puram, Coimbatore</p>
             </div>
 
+            </div>
+
         </div>
+    </section>
 
-    </div>
-</section>
-
-<!-- ===== CTA BAR ===== -->
-<section class="cta-bar">
-    <div class="container cta-bar-content">
-        <span><i class="fas fa-certificate"></i> Want to apply for a certification?</span>
-        <a href="mailto:infovc@veritasconsul.com" class="btn-primary">
-            <i class="fas fa-envelope"></i> Engage Veritas
-        </a>
-    </div>
-</section>
+    <!-- ===== CTA BAR ===== -->
+    <section class="cta-bar">
+        <div class="container cta-bar-content">
+            <span><i class="fas fa-certificate"></i> Want to apply for a certification?</span>
+            <a href="mailto:infovc@veritasconsul.com" class="btn-primary">
+                <i class="fas fa-envelope"></i> Request Quote
+            </a>
+        </div>
+    </section>
 
 </main>
 
 <!-- ============================================================
-FOOTER
-============================================================ -->
+     FOOTER
+     ============================================================ -->
 <footer class="footer">
     <div class="container footer-grid">
         <div class="footer-brand">
@@ -1227,6 +1224,7 @@ FOOTER
         <div class="footer-services">
             <h4>Services</h4>
             <ul>
+                <li><a href="services.html#advisory">Advisory</a></li>
                 <li><a href="services.html#management">Information Security &amp; Management Systems</a></li>
                 <li><a href="services.html#grc">GRC &amp; Technology Risk</a></li>
                 <li><a href="services.html#assurance">Assurance &amp; Audit Readiness</a></li>
@@ -1277,7 +1275,7 @@ FOOTER
         });
 
         const observerOptions = {
-            threshold: 0.0001,
+            threshold: 0.1,
             rootMargin: '0px 0px -30px 0px'
         };
 
@@ -1303,6 +1301,7 @@ FOOTER
             contactForm.addEventListener('submit', function(e) {
                 e.preventDefault();
 
+                // Get form values
                 const name = document.getElementById('name').value.trim();
                 const organisation = document.getElementById('organisation').value.trim();
                 const email = document.getElementById('email').value.trim();
@@ -1310,11 +1309,13 @@ FOOTER
                 const area = document.getElementById('areaOfInterest').value;
                 const message = document.getElementById('message').value.trim();
 
+                // Validate required fields
                 if (!name || !organisation || !email || !area || !message) {
                     alert('Please fill in all required fields.');
                     return;
                 }
 
+                // Build email subject and body
                 const subject = `Consultation Request from ${name} - ${organisation}`;
                 const body = `
         ========================================
@@ -1337,13 +1338,18 @@ FOOTER
         ========================================
                 `.trim();
 
-                const gmailLink =
-                    `https://mail.google.com/mail/?view=cm&fs=1&to=infovc@veritasconsul.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
+                // ============================================================
+                // GMAIL COMPOSE LINK - Opens Gmail with pre-filled details
+                // ============================================================
+                const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=infovc@veritasconsul.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                
+                // Open Gmail in new tab/window
                 window.open(gmailLink, '_blank');
 
+                // Show success message
                 successMessage.classList.add('show');
 
+                // Reset form after delay
                 setTimeout(() => {
                     contactForm.reset();
                     setTimeout(() => {
